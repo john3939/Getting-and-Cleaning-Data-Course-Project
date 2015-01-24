@@ -12,12 +12,12 @@ Details of the source data can be found in README.txt file in the source data.
 
 To perform the transformation, the run_analysis.R script is provided.
 
-copy the run_analysis.R script to your current directory
-Download and extract the data from the above URL into the current directory
-Run R and execute:
+* copy the run_analysis.R script to your current directory
+* Download and extract the data from the above URL into the current directory
+* Run R and execute:
 	source("run_analysis.R") 
 	
-Required libraries are data.table and dplyr, make sure you have those packages installed prior to running the script.
+* Required libraries are data.table and dplyr, make sure you have those packages installed prior to running the script.
 	
 It will store the result into 2 files:
 	*dtFinal- final tidy dataset containing only measures pertaining to mean or standard deviation, with appropriate column and activity labels
