@@ -72,7 +72,7 @@ Here is what run_analysis.R does:
 	the end result is saved to a a file called dtSummary.txt
 	
 Variables in the dtSummary.txt are listed below.  Each row represents the mean values for the variables 3-88 for one subject for 1 activity. 
-
+```
  [1] "Subject" - numbered from 1 to 30                                
  [2] "Activity" -WALKING,WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
  
@@ -164,4 +164,4 @@ Variables in the dtSummary.txt are listed below.  Each row represents the mean v
 [86] "frequencyBodyBodyAccJerkMag.std.."      
 [87] "frequencyBodyBodyGyroMag.std.."         
 [88] "frequencyBodyBodyGyroJerkMag.std.."  
-
+```
