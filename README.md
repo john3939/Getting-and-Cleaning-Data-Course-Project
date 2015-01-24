@@ -17,6 +17,8 @@ Download and extract the data from the above URL into the current directory
 Run R and execute:
 	source("run_analysis.R") 
 	
+Required libraries are data.table and dplyr, make sure you have those packages installed prior to running the script.
+	
 It will store the result into 2 files:
 	*dtFinal- final tidy dataset containing only measures pertaining to mean or standard deviation, with appropriate column and activity labels
 	*dtSummary- final tidy dataset summarizes the result using the mean of each variable for each Subject/Activity pair
