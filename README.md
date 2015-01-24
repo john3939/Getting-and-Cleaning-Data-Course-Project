@@ -20,8 +20,8 @@ To perform the transformation, the run_analysis.R script is provided.
 * Required libraries are data.table and dplyr, make sure you have those packages installed prior to running the script.
 	
 It will store the result into 2 files:
-	*dtFinal- final tidy dataset containing only measures pertaining to mean or standard deviation, with appropriate column and activity labels
-	*dtSummary- final tidy dataset summarizes the result using the mean of each variable for each Subject/Activity pair
+	* dtFinal- final tidy dataset containing only measures pertaining to mean or standard deviation, with appropriate column and activity labels
+	* dtSummary- final tidy dataset summarizes the result using the mean of each variable for each Subject/Activity pair
 
 the run_analysis.R script has a setwd(dataDIR) and a dataDIR variable which can be customized to match your local environment.
 
