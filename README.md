@@ -1,6 +1,6 @@
 # Getting-and-Cleaning-Data-Course-Project
-README.md
-Course Project for "Getting and Cleaning Data"
+## README.md
+## Course Project for "Getting and Cleaning Data"
 
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set.
 he goal is to prepare tidy data that can be used for later analysis. 
@@ -18,8 +18,8 @@ Run R and execute:
 	source("run_analysis.R") 
 	
 It will store the result into 2 files:
-	dtFinal- final tidy dataset containing only measures pertaining to mean or standard deviation, with appropriate column and activity labels
-	dtSummary- final tidy dataset summarizes the result using the mean of each variable for each Subject/Activity pair
+	*dtFinal- final tidy dataset containing only measures pertaining to mean or standard deviation, with appropriate column and activity labels
+	*dtSummary- final tidy dataset summarizes the result using the mean of each variable for each Subject/Activity pair
 
 the run_analysis.R script has a setwd(dataDIR) and a dataDIR variable which can be customized to match your local environment.
 
