@@ -28,8 +28,9 @@ the run_analysis.R script has a setwd(dataDIR) and a dataDIR variable which can 
 The run_analysis.R script performs the entire sequence of steps to create the tidy dataset from the experimental results.
 Here is what run_analysis.R does:
 
-* changes directory to where the data is located, assuming the the data is extracted in your current directory
-* reads in the files into data tables or data frames, the following are the major ones:
+1. changes directory to where the data is located, assuming the the data is extracted in your current directory
+2. reads in the files into data tables or data frames, the following are the major ones:
+```
 	features- list of what was measured- there are 561 features
 	feature_labels- list of labels to describe features, essentially a cleaned up version of features to make variable names acceptable to R
 	act_labels- mapping of activity number- eg seq(1:6) to activity description:
@@ -47,12 +48,12 @@ Here is what run_analysis.R does:
 
 	dtFinal- final tidy dataset containing only measures pertaining to mean or standard deviation, with appropriate column and activity labels
 	dtSummary- final tidy dataset summarizes the result using the mean of each variable for each Subject/Activity pair
+```
 
-* the script selects only the variables that are measuring mean or standard deviation of the features,  this selects 86 out of 561 features
+3. the script selects only the variables that are measuring mean or standard deviation of the features,  this selects 86 out of 561 features
 
-* the script merges the training and test data, then adds columns for subject and activity, along with appropriate column names
-	the end result is a data table with 10299 rows and 88 columns.  this is a tidy dataset and is saved to a file called dtFinal.txt
+4. the script merges the training and test data, then adds columns for subject and activity, along with appropriate column names.  The end result is a data table with 10299 rows and 88 columns.  This is a tidy dataset and is saved to a file called dtFinal.txt
 
-* groups the data table by subject and activity and produces a summary containing the 1 mean for each feature variable per Subject/Activity.  The end result is saved to a a file called dtSummary.txt
+5. groups the data table by subject and activity and produces a summary containing the 1 mean for each feature variable per Subject/Activity.  The end result is saved to a a file called dtSummary.txt
  
 
