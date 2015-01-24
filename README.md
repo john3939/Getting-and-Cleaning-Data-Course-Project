@@ -4,28 +4,29 @@ Course Project for "Getting and Cleaning Data"
 
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set.
 he goal is to prepare tidy data that can be used for later analysis. 
-
-
-This code book describes the project and the variables, data and transformation and scripts performed to create the tidy data set.
-To perform the transformation, the run_analysis.R script is provided.
-Assumption- you have downloaded and unzipped the data files into a directory on your system.
-You are executing the script from within R in the directory where you have downloaded and unzipped the data.
-the run_analysis.R script has a setwd(dataDIR) and a dataDIR variable which can be changed to match your local environment
-The data files are available at:
+The data is available for download at:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
 Details of the source data can be found in README.txt file in the source data.
 
-The run_analysis.R script performs the entire sequence of steps to create the tidy dataset from the experimental results.
-Once complete, it will have written the resulting tidy datasets to the current directory.
-the results will be:
+To perform the transformation, the run_analysis.R script is provided.
 
+copy the run_analysis.R script to your current directory
+Download and extract the data from the above URL into the current directory
+Run R and execute:
+	source("run_analysis.R") 
+	
+It will store the result into 2 files:
 	dtFinal- final tidy dataset containing only measures pertaining to mean or standard deviation, with appropriate column and activity labels
 	dtSummary- final tidy dataset summarizes the result using the mean of each variable for each Subject/Activity pair
 
+the run_analysis.R script has a setwd(dataDIR) and a dataDIR variable which can be customized to match your local environment.
+
+The run_analysis.R script performs the entire sequence of steps to create the tidy dataset from the experimental results.
 Here is what run_analysis.R does:
 
-1) changes directory to where the data is located, assuming the toplevel is in your current directory
+1) changes directory to where the data is located, assuming the the data is extracted in your current directory
 2) reads in the files into data tables or data frames, the following are the major ones:
 	features- list of what was measured- there are 561 features
 	feature_labels- list of labels to describe features, essentially a cleaned up version of features to make variable names acceptable to R
@@ -51,6 +52,6 @@ Here is what run_analysis.R does:
 	the end result is a data table with 10299 rows and 88 columns.  this is a tidy dataset and is saved to a file called dtFinal.txt
 
 5) groups the data table by subject and activity and produces a summary containing the 1 mean for each feature variable per Subject/Activity.
-	the end result is saved to a a fule called dtSummary.txt
+	the end result is saved to a a file called dtSummary.txt
  
 
